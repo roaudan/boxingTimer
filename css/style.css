@@ -1,0 +1,12 @@
+h1{
+    font-size: 150px;
+}
+
+button{
+    width: 200px;
+    height: 110px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
