@@ -9,9 +9,11 @@ function run() {
   document.getElementById("button").style.display = "none";
   ring.play();
     setInterval(function () {
+      document.getElementById("now").innerHTML = "exercize time"
       document.getElementById("time").innerHTML = `${runTime}seconds left`
       if(runTime <= -1){
-        ring.play();
+        ring.play();0
+        document.getElementById("now").innerHTML = "break time"
         document.getElementById("time").innerHTML = `${restTime}seconds left`
         if(restTime <= 0){
           runTime = 180;
@@ -26,4 +28,6 @@ function run() {
     }, 1000);
   }
   
-function ap (){};
+function settings(){
+  alert("Settings will be updated soon.")
+}
